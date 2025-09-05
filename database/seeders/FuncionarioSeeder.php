@@ -13,25 +13,24 @@ class FuncionarioSeeder extends Seeder
      */
     public function run(): void
     {
-        // Crear funcionarios
+        // Crear funcionarios adicionales para pruebas
         User::create([
-            'name' => 'Juan Funcionario',
-            'email' => 'funcionario@municipalidad.com',
+            'name' => 'Ana García',
+            'email' => 'ana.garcia@municipalidad.com',
             'password' => Hash::make('password'),
             'role_id' => 2, // Funcionario
         ]);
 
         User::create([
-            'name' => 'María Responsable',
-            'email' => 'maria.responsable@municipalidad.com',
+            'name' => 'Pedro Martínez',
+            'email' => 'pedro.martinez@municipalidad.com',
             'password' => Hash::make('password'),
             'role_id' => 2, // Funcionario
         ]);
 
-        // Crear un administrador adicional
         User::create([
-            'name' => 'Carlos Admin',
-            'email' => 'admin2@municipalidad.com',
+            'name' => 'Laura Rodríguez',
+            'email' => 'laura.rodriguez@municipalidad.com',
             'password' => Hash::make('password'),
             'role_id' => 3, // Administrador
         ]);
