@@ -1,0 +1,19 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+  font-family: 'Instrument Sans';
+  src: url('../fonts/InstrumentSans-VariableFont_wdth,wght.ttf') format('truetype');
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  }
+  
+  html {
+    font-family: var(--font-sans);
+  }
+}
